@@ -1,0 +1,38 @@
+# =========================
+# Maven
+# =========================
+/target/
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/logs/
+*.log
+
+# =========================
+# Eclipse / STS / IDEA
+# =========================
+.classpath
+.project
+.settings/
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# =========================
+# OS-specific
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Others
+# =========================
+# Archivos de compilación temporales
+*.class
+*.war
+*.ear
+*.jar
+
+# Archivos de copia de seguridad
+*~
