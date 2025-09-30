@@ -9,13 +9,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		PhoneBook phoneBook = new PhoneBook();
+		PhoneBook phoneBook = new PhoneBook(5);
 
-		phoneBook.addContact(new Contact("Pedro", "Paramo", "555-1234"));
-		phoneBook.addContact(new Contact("Luis", "Pérez", "555-5678"));
-		phoneBook.addContact(new Contact("Carla", "Ramírez", "555-8765"));
-		phoneBook.addContact(new Contact("Ana", "Torres", "555-4321"));
-		phoneBook.addContact(new Contact("Marta", "García", "555-9999"));
+		if (phoneBook.freeSlots() >= 5) {
+			phoneBook.addContact(new Contact("Pedro", "Paramo", "555-1234"));
+			phoneBook.addContact(new Contact("Luis", "Perez", "555-5678"));
+			phoneBook.addContact(new Contact("Carla", "Ramirez", "555-8765"));
+			phoneBook.addContact(new Contact("Ana", "Torres", "555-4321"));
+			phoneBook.addContact(new Contact("Marta", "García", "555-9999"));
+		}
 
 		int option;
 		do {
